@@ -14,11 +14,15 @@
  * limitations under the License.
  */
 
+variable project {
+  description = "Project to create resources into"
+}  
+   
 variable network {
   description = "The network to deploy to"
   default     = "default"
-}
-
+}  
+   
 variable subnetwork {
   description = "The subnetwork to deploy to"
   default     = "default"
