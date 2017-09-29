@@ -82,4 +82,5 @@ resource "google_compute_firewall" "nat-gateway" {
 
 resource "google_compute_address" "default" {
   name = "nat-${var.region}"
+  project = "${var.project}"
 }
